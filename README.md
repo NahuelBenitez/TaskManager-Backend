@@ -22,10 +22,7 @@ Este es el backend de **Coally Task Manager**, una aplicación de gestión de ta
 
 ## Instalación
 
-  
-
 Sigue estos pasos para configurar el backend en tu entorno local.
-
   
 
 **1. Clona el repositorio:**
@@ -63,7 +60,6 @@ JWT_SECRET: Es la clave secreta que se utilizará para firmar los tokens JWT. Pu
 PORT: Es el puerto en el que se ejecutará el servidor (puedes mantener el valor por defecto de 5000 o cambiarlo).
 
   
-
 **4. Iniciar el servidor**
 
 Una vez que hayas configurado el archivo .env, ejecuta el siguiente comando para iniciar el servidor:  
