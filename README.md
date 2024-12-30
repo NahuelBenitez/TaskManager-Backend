@@ -1,6 +1,15 @@
 # Coally Task Manager - Backend
 
 Este es el backend de **Coally Task Manager**, una aplicación de gestión de tareas que permite a los usuarios crear, leer, actualizar y eliminar tareas. El backend está desarrollado con **Node.js**, **Express**, y **MongoDB** para almacenar las tareas y la información de los usuarios
+## Link
+
+https://taskmanager-backend-ou5n.onrender.com/api-docs/
+
+  
+
+El deploy se realizo con Render como un WebService
+
+https://render.com/
 
 ## Tecnologías
 
@@ -18,6 +27,11 @@ Este es el backend de **Coally Task Manager**, una aplicación de gestión de ta
 
 -  **Dotenv** - Para manejar variables de entorno de forma segura.
 
+-  **Express Validator** - Para validar datos.
+
+- **Cors** - Para permitir acceder a los enpoints desde el frontend.
+
+- **Swagger** - Para la documentación.
   
 
 ## Instalación
