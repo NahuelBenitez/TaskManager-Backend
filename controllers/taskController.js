@@ -1,7 +1,7 @@
 const Task = require('../models/Task');
 const { validationResult } = require('express-validator');
 
-// Crear una nueva tarea
+
 const createTask = async (req, res) => {
   const errors = validationResult(req);
   if (!errors.isEmpty()) {
@@ -19,9 +19,9 @@ const createTask = async (req, res) => {
   }
 };
 
-// Obtener todas las tareas
+
 const getTasks = async (req, res) => {
-  const { status } = req.query;  // Filtrar por estado
+  const { status } = req.query;  
   
   try {
     let tasks;
@@ -38,7 +38,7 @@ const getTasks = async (req, res) => {
   }
 };
 
-// Obtener una tarea por ID
+
 const getTaskById = async (req, res) => {
   const { id } = req.params;
   
@@ -51,7 +51,7 @@ const getTaskById = async (req, res) => {
   }
 };
 
-// Actualizar tarea
+
 const updateTask = async (req, res) => {
   const { id } = req.params;
   const { title, description, completed } = req.body;
@@ -65,7 +65,7 @@ const updateTask = async (req, res) => {
   }
 };
 
-// Eliminar tarea
+
 const deleteTask = async (req, res) => {
   const { id } = req.params;
 

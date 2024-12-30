@@ -10,17 +10,14 @@ const swaggerUi = require('swagger-ui-express');
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-// Conectar a la base de datos
 connectDB();
 
-
-// Usar CORS para permitir solicitudes desde tu frontend
 app.use(cors());
 
-// Middleware
+
 app.use(express.json());
 
-// Configuracion de Swagger
+
 const swaggerOptions = {
     swaggerDefinition: {
       info: {
@@ -43,7 +40,7 @@ const swaggerOptions = {
 const swaggerDocs = swaggerJsdoc(swaggerOptions);
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocs));
 
-// Rutas
+
 app.use(taskRoutes);
 app.use(authRoutes);
 
